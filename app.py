@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-OPENAI_API_KEY = "sk-proj-sUdlXXTpZxfemilU6rOOT3BlbkFJ2G5Mb1ZlVQMsqsOy5UfY"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 app = Flask(__name__)
